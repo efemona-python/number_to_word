@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/number_to_word.iml" filepath="$PROJECT_DIR$/.idea/number_to_word.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/numbers_to_words_generator.iml" filepath="$PROJECT_DIR$/.idea/numbers_to_words_generator.iml" />
     </modules>
   </component>
 </project>

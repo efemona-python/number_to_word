@@ -71,18 +71,19 @@ db.create_all()
 @app.route('/')
 def home():
     converter_form = ConvertNumber()
-    return render_template("index.html", form=converter_form, nwords='')
+    return render_template("index.html", form=converter_form, nwords='' )
 
 
 
 @app.route('/convert', methods=['GET', 'POST'])
 def convert():
     converter_form = ConvertNumber()
+    nwords=''
     if converter_form.validate_on_submit():
         gen =GenerateWord()
         number_to_words = gen.generate_words(number=converter_form.number.data)
-        return render_template("index.html", form=converter_form, nwords=number_to_words)
-    return render_template("index.html", form=converter_form, nwords='')
+        return render_template("index.html", form=converter_form, nwords= number_to_words)
+    return render_template("index.html", form=converter_form, nwords=nwords)
 
 
 
